@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestArea</title>
+    <script>
+
+    let count = 1;
+      function func(){
+        if(count%2 == 1){
+          document.getElementById("n").innerHTML = "This is a bih";
+        }
+        else if(count%2 == 0){
+          document.getElementById("n").innerHTML  = "This is a paragraph";
+        }
+        else{
+          document.getElementById("n").innerHTML = "Error";
+        }
+        console.log(count);
+        count++;
+
+      }
+
+    function fuck(){
+      count = "word";
+    }
+    </script>
+  </head>
+
+  <body>
+ <p id = "n"> This is a paragraph</p>
+ <button type = "button" onclick="func()" style = "border: 2px solid black; "> Click me</button>
+ <button type = "button" onclick="fuck()" style = "border: 2px solid black; " >Fuck it up</button>
+  </body>
+
+</html>

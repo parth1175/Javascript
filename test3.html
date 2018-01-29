@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Test3 </title>
+    <link rel="stylesheet" type="text/css" href="./styles/test3.css">
+  </head>
+
+
+  <body>
+    <div id = "g">
+      <p>This is a line</p>
+    </div>
+
+    <script>
+      document.getElementById("g").innerHTML = "<p> This is NOT a line</p> <p> Just kidding </p>";
+      // try to first write html code to the id. then move the script around
+      // then try document.getElementById("g") = "<p>This is NOT a line</p>"
+      console.log(document.getElementById("g"));
+
+      console.log("this is a space");
+
+      console.log(document.getElementById("g").innerHTML);
+    </script>
+
+
+  </body>
+</html>

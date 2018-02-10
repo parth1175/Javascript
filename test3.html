@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Test3 </title>
-    <link rel="stylesheet" type="text/css" href="./styles/test3.css">
-  </head>
+<body>
 
+<img id="myImg" src="../htmlcss/images/gssm.jpg" style="width:100px;height:132px;">
+<br>
 
-  <body>
-    <div id = "g">
-      <p>This is a line</p>
-    </div>
+<button type="button" onclick="myFunction()">Return width of image</button>
 
-    <script>
-      document.getElementById("g").innerHTML = "<p> This is NOT a line</p> <p> Just kidding </p>";
-      // try to first write html code to the id. then move the script around
-      // then try document.getElementById("g") = "<p>This is NOT a line</p>"
-      console.log(document.getElementById("g"));
+<script>
+function myFunction() {
+    document.write(document.getElementById("myImg").style.width);
+}
+</script>
 
-      console.log("this is a space");
-
-      console.log(document.getElementById("g").innerHTML);
-    </script>
-
-
-  </body>
+</body>
 </html>
